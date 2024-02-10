@@ -1,0 +1,34 @@
+#pagination-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#arrow-controls,
+#pagination {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+#arrow-controls button,
+#pagination button,
+#pagination span {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+#pagination span {
+    background-color: #007bff;
+    color: white;
+    cursor: default;
+}
+
+#pagination button:disabled,
+#arrow-controls button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
